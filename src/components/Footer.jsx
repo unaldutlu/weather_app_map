@@ -5,13 +5,13 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className='fixed bottom-0 flex flex-col md:flex-row justify-between items-center bg-slate-600 w-full p-3'>
-      <div className='md:flex-auto md:w-16 bg-blue-300'>
-        <h1 className='text-center md:text-start pl-5'>
+    <div className='fixed bottom-0 flex flex-col md:flex-row justify-between items-center bg-slate-900 w-full p-3'>
+      <div className='md:flex-auto md:w-16'>
+        <h1 className='md:text-start md:pl-5 flex justify-start text-gray-300'>
           Copyright &copy; New Design 2023
         </h1>
       </div>
-      <div className='md:flex-auto md:w-16 lg:w-64 bg-red-500'>
+      <div className='md:flex-auto md:w-16'>
         <ul className='flex flex-row py-2 md:py-1 justify-center'>
           <li className='w-[40px] h-[30px] flex  justify-between items-center rounded-xl hover:scale-150 bg-blue-400 hover:bg-blue-500'>
             <a
@@ -47,8 +47,10 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className='md:flex-auto md:w-16'>
-        <h1 className='text-center md:text-end pr-5'>Privacy Policy</h1>
+      <div className='md:flex-auto md:w-0 lg:w-14'>
+        <h1 className='text-center md:text-end md:pr-5 text-gray-300'>
+          Privacy Policy
+        </h1>
       </div>
     </div>
   );

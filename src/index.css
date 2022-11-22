@@ -11,7 +11,7 @@
     @apply mx-3 text-xl p-3 tracking-widest duration-500
   }
   .navlink {
-    @apply text-xl p-3 tracking-widest duration-500
+    @apply text-lg sm:text-xl p-3 tracking-widest duration-500
   }
 
   .header {
