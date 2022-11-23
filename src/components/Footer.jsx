@@ -5,7 +5,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div className='fixed bottom-0 flex flex-col md:flex-row justify-between items-center bg-slate-900 w-full p-3'>
+    <div className='fixed bottom-0 flex flex-col md:flex-row justify-between items-center bg-slate-700 w-full p-3'>
       <div className='md:flex-auto md:w-16'>
         <h1 className='md:text-start md:pl-5 flex justify-start text-gray-300'>
           Copyright &copy; New Design 2023
