@@ -3,9 +3,9 @@ import React from "react";
 function Card({ location, weather }) {
   return (
     <div className='flex justify-center m-[5%]  my-5 lg:my-7 pb-28'>
-      <div className='border border-orange-500 w-[39rem] h-64 sm:h-80 text-center rounded-2xl bg-yellow-500'>
-        <div>
-          <h1 className='mt-1 lg:mt-2 font-bold lg:font-extrabold tracking-wide text-xl lg:text-2xl showw'>
+      <div className='border border-orange-500 w-[39rem] h-64 sm:h-80 text-center rounded-2xl bg-yellow-500 frame'>
+        <div className="flex justify-center">
+          <h1 className='mt-1 lg:mt-2 w-60 font-bold lg:font-extrabold tracking-wide text-xl lg:text-2xl showw'>
             {location}
           </h1>
         </div>
@@ -27,7 +27,7 @@ function Card({ location, weather }) {
               {weather?.main.humidity}%
             </div>
           </div>
-          <div className='flex items-center mr-2 mb-3 lg:mb-2 lg:mr-3 border-2 border-yellow-900 rounded-2xl'>
+          <div className='flex items-center mr-2 mb-3 lg:mb-2 lg:mr-3 border-2 border-yellow-900 rounded-2xl bg-amber-700'>
             <img
               src={`http://openweathermap.org/img/wn/${weather?.weather[0].icon}.png`}
               alt=''
