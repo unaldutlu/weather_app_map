@@ -37,23 +37,11 @@ function Weather() {
           />
           <Route
             path='turkeyMap'
-            element={
-              <TurkeyMapp
-                weather={weather}
-                location={location}
-                setLocation={setLocation}
-              />
-            }
+            element={<TurkeyMapp setLocation={setLocation} />}
           />
           <Route
             path='listOfCities'
-            element={
-              <ListOfCities
-                weather={weather}
-                location={location}
-                setLocation={setLocation}
-              />
-            }
+            element={<ListOfCities setLocation={setLocation} />}
           />
         </Routes>
         <Footer />
