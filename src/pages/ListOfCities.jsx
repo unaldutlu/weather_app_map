@@ -13,7 +13,7 @@ function ListOfCities({ setLocation }) {
   };
 
   return (
-    <div className='flex justify-center items-center p-10'>
+    <div className='flex flex-col justify-center items-center p-10'>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -42,6 +42,9 @@ function ListOfCities({ setLocation }) {
           Submit
         </button>
       </form>
+      <div className='style flex justify-center items-center mt-[17%]'>
+        <h1 className='font-extrabold text-4xl uppercase'>weather app</h1>
+      </div>
     </div>
   );
 }

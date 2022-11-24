@@ -7,10 +7,13 @@ function Navbar() {
   return (
     <div className=' flex flex-row justify-between bg-slate-700 text-yellow-400'>
       <div className='flex flex-row'>
-        <NavLink to='/' className='navlink mx-5 font-bold hover:scale-125 hover:text-orange-500'>
+        <NavLink
+          to='/'
+          className='text-lg sm:text-xl p-3 tracking-widest duration-500 mx-5 font-bold hover:scale-125 hover:text-orange-500'
+        >
           Weather App
         </NavLink>
-        <nav className="hidden lg:block">
+        <nav className='hidden lg:block'>
           <ul className='flex flex-row'>
             <li className='hover:scale-125 hover:text-orange-500'>
               <NavLink to='/'>Home</NavLink>
@@ -25,7 +28,9 @@ function Navbar() {
         </nav>
       </div>
       <div className='flex items-center pr-5 font-bold'>
-        <h1 className='hover:scale-125 hover:text-orange-500 duration-500'>{formatDate}</h1>
+        <h1 className='hover:scale-125 hover:text-orange-500 duration-500'>
+          {formatDate}
+        </h1>
       </div>
     </div>
   );
