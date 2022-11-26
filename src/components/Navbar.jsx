@@ -6,7 +6,7 @@ function Navbar() {
   const formatDate = Moment().format("DD-MM-YYYY");
   return (
     <div className='grid grid-cols-12 items-center bg-slate-700'>
-      <div className='col-span-8 lg:col-span-4 flex justify-start'>
+      <div className='col-span-8 lg:col-span-3 2xl:col-span-2 flex justify-start'>
         <NavLink
           to='/'
           className='stylee text-md sm:text-xl ps-3 py-3 tracking-widest duration-500 mx-5 font-bold hover:scale-110 lg:hover:scale-100 text-yellow-500 hover:text-orange-500  lg:hover:text-slate-300'
@@ -14,9 +14,9 @@ function Navbar() {
           Weather App Turkey
         </NavLink>
       </div>
-      <div className='hidden lg:block  col-span-0 lg:col-span-6 family'>
+      <div className='hidden lg:block  col-span-0 lg:col-span-7 family'>
         <nav>
-          <ul className='flex flex-row'>
+          <ul className='flex flex-row justify-center xl:justify-start xl:pl-36 2xl:justify-center'>
             <li className='hover:scale-125 hover:text-orange-500'>
               <NavLink
                 style={({ isActive }) => ({
@@ -53,7 +53,7 @@ function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className='col-span-4 lg:col-span-2 pr-5 font-bold '>
+      <div className='col-span-4 lg:col-span-2 2xl:col-span-3 pr-5 font-bold '>
         <h1 className='flex justify-end styleee lg:hover:text-slate-300'>{formatDate}</h1>
       </div>
     </div>
