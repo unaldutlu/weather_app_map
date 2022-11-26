@@ -4,7 +4,7 @@ function Card({ location, weather }) {
   return (
     <div className='flex justify-center m-[5%]  my-5 lg:my-7 pb-28'>
       <div className='border border-orange-500 w-[39rem] h-64 sm:h-80 text-center rounded-2xl bg-yellow-500 frame'>
-        <div className="flex justify-center">
+        <div className='flex justify-center'>
           <h1 className='mt-1 lg:mt-2 w-60 font-bold lg:font-extrabold tracking-wide text-xl lg:text-2xl showw uppercase'>
             {location}
           </h1>
