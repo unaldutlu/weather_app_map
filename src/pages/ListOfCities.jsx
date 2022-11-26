@@ -43,7 +43,7 @@ function ListOfCities({ setLocation }) {
         </button>
       </form>
       <div className='style flex justify-center items-center mt-[17%]'>
-        <h1 className='font-extrabold text-4xl uppercase'>weather app</h1>
+        <h1 className='font-extrabold text-4xl uppercase'>weather app turkey</h1>
       </div>
     </div>
   );

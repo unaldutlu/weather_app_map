@@ -44,7 +44,7 @@ function TurkeyMapp({ setLocation }) {
           onClick={handleClick}
           hoverable={true}
           onHover={handleHover}
-          customStyle={{ idleColor: "#ff0000", hoverColor: "#eeee" }}
+          customStyle={{ idleColor: "#f97316", hoverColor: "#eeee" }}
         />
       </div>
     </div>
