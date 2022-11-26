@@ -6,5 +6,6 @@ Live Link:
 https://weather-app-map-tr.netlify.app/
 
 
-![Animation5](https://user-images.githubusercontent.com/94699375/203876535-3d98c49e-ebd9-4e15-95a6-94011f129bca.gif)
+![Animation4](https://user-images.githubusercontent.com/94699375/204112748-2f49359e-a6a7-48a3-b2ee-bf1c27dff067.gif)
+
 
