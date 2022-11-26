@@ -28,11 +28,38 @@
   color: #252839;
   -webkit-text-stroke: 0.2vw #383d52;
 }
-.stylee {
+
+.styleee {
   color: #252839;
   -webkit-text-stroke: 0.1vw rgb(167, 173, 180);
 }
 
-.family{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.family {
+  font-family: 'Times New Roman', Times, serif;
 }
+
+
+@media screen and (min-width:1024px) {
+  .stylee {
+    color: #252839;
+    -webkit-text-stroke: 0.1vw rgb(167, 173, 180);
+  }
+}
+
+@media screen and (max-height:415px) {
+  .weather{
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .selectt{
+    width: 13rem;
+  }
+}
+@media screen and (max-width:290px) {
+  .selectt{
+    width: 8rem;
+  }
+}
+
