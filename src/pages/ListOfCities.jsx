@@ -13,7 +13,7 @@ function ListOfCities({ setLocation }) {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center p-10'>
+    <div className='flex flex-col justify-center items-center py-10'>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -26,7 +26,7 @@ function ListOfCities({ setLocation }) {
             setCity(e.target.value);
           }}
           value={city}
-          className='h-7 w-60 rounded-lg mr-6 px-2 outline-none show font-bold'
+          className='selectt h-7  sm:w-60 rounded-lg mr-6 px-2 outline-none show font-bold'
         >
           {cities.map((city) => (
             <option key={`city-${city}`} value={city}>
@@ -42,8 +42,10 @@ function ListOfCities({ setLocation }) {
           Submit
         </button>
       </form>
-      <div className='style flex justify-center items-center mt-[17%]'>
-        <h1 className='font-extrabold text-4xl uppercase'>weather app turkey</h1>
+      <div className='style flex justify-center items-center mt-[50%] lg:mt-[17%] weather'>
+        <h1 className='font-extrabold text-xl sm:text-2xl lg:text-4xl uppercase'>
+          weather app turkey
+        </h1>
       </div>
     </div>
   );
