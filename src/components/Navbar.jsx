@@ -9,7 +9,7 @@ function Navbar() {
       <div className='col-span-8 lg:col-span-4 flex justify-start'>
         <NavLink
           to='/'
-          className='stylee text-md sm:text-xl ps-3 py-3 tracking-widest duration-500 mx-5 font-bold hover:scale-110 lg:hover:scale-100 text-yellow-500 lg:text-slate-300 hover:text-orange-500 lg:hover:text-slate-300'
+          className='stylee text-md sm:text-xl ps-3 py-3 tracking-widest duration-500 mx-5 font-bold hover:scale-110 lg:hover:scale-100 text-yellow-500 hover:text-orange-500  lg:hover:text-slate-300'
         >
           Weather App Turkey
         </NavLink>

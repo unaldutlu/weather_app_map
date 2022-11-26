@@ -24,7 +24,7 @@ function TurkeyMapp({ setLocation }) {
       <div className='text-center pt-2 flex justify-center items-center h-16'>
         {isCity ? (
           <>
-            <div className='mr-4 rounded-3xl p-1 w-12 h-[2.6rem] flex justify-center items-center  border-4 border-dashed border-orange-400 bg-slate-600'>
+            <div className='mr-4 rounded-3xl p-1 w-12 h-[2.6rem] flex justify-center items-center bg-orange-500'>
               <h1 className='font-extrabold text-slate-50 tracking-wide text-2xl'>
                 {cityName.plateNumber}
               </h1>

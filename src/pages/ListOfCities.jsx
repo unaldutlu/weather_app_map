@@ -36,7 +36,7 @@ function ListOfCities({ setLocation }) {
         </select>
         <button
           type='submit'
-          className='bg-blue-500 text-white border-none  px-4 rounded-lg hover:bg-orange-500 h-7 show'
+          className='bg-orange-500 text-white border-none  px-4 rounded-lg hover:bg-orange-600 h-7 show'
           onClick={handleClick}
         >
           Submit
