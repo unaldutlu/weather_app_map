@@ -5,32 +5,56 @@ import Moment from "moment";
 function Navbar() {
   const formatDate = Moment().format("DD-MM-YYYY");
   return (
-    <div className=' flex flex-row justify-between bg-slate-700 text-yellow-400'>
-      <div className='flex flex-row'>
+    <div className='grid grid-cols-12 items-center bg-slate-700'>
+      <div className="col-span-4 flex justify-start">
         <NavLink
           to='/'
-          className='text-lg sm:text-xl p-3 tracking-widest duration-500 mx-5 font-bold hover:scale-125 hover:text-orange-500'
+          className='stylee text-md sm:text-xl p-3 tracking-widest duration-500 mx-5 font-bold hover:scale-125 lg:hover:scale-100 text-slate-300 hover:text-orange-500 lg:hover:text-slate-300'
         >
-          Weather App
+          Weather App Turkey
         </NavLink>
-        <nav className='hidden lg:block'>
+      </div>
+      <div className='col-span-6 family'>
+        <nav className="hidden lg:block ">
           <ul className='flex flex-row'>
             <li className='hover:scale-125 hover:text-orange-500'>
-              <NavLink to='/'>Home</NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "yellow",
+                  textDecoration: isActive ? "underline" : "none",
+                })}
+                to='/'
+              >
+                Home
+              </NavLink>
             </li>
             <li className='hover:scale-125 hover:text-orange-500'>
-              <NavLink to='turkeyMap'>Turkey Map</NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "yellow",
+                  textDecoration: isActive ? "underline" : "none",
+                })}
+                to='turkeyMap'
+              >
+                Turkey Map
+              </NavLink>
             </li>
             <li className='hover:scale-125 hover:text-orange-500'>
-              <NavLink to='listOfCities'>List Cities</NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "yellow",
+                  textDecoration: isActive ? "underline" : "none",
+                })}
+                to='listOfCities'
+              >
+                Cities List
+              </NavLink>
             </li>
           </ul>
         </nav>
       </div>
-      <div className='flex items-center pr-5 font-bold'>
-        <h1 className='hover:scale-125 hover:text-orange-500 duration-500'>
-          {formatDate}
-        </h1>
+      <div className='col-span-2 pr-5 font-bold '>
+        <h1 className='flex justify-end stylee'>{formatDate}</h1>
       </div>
     </div>
   );
